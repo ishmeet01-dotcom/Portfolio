@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume — Ishmeet Singh</title>
+  <meta name="description" content="Official verified curriculum vitae of Ishmeet Singh, Computer Science student specializing in offensive security, red teaming, and generative AI.">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23c64527'><rect width='24' height='24' rx='6'/><text x='12' y='16' fill='white' font-family='sans-serif' font-size='10' font-weight='bold' text-anchor='middle'>IS</text></svg>">
+
+  <script>
+    (function() {
+      try {
+        var stored = localStorage.getItem('portfolio_theme_pref');
+        var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        var theme = stored ? stored : (prefersDark ? 'dark' : 'light');
+        if (theme === 'dark') {
+          document.documentElement.setAttribute('data-theme', 'dark');
+        } else {
+          document.documentElement.removeAttribute('data-theme');
+        }
+      } catch (e) {}
+    })();
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body id="top">
+  <div class="site-wrapper">
+    <header id="siteHeader" class="site-header" role="banner"></header>
+
+    <main id="mainContent" style="padding-top: 4rem; padding-bottom: 6rem;">
+      <section class="section-block" style="border: none;">
+        <div class="container">
+          <header class="section-header">
+            <span class="section-num-tag">08 / SOURCE OF TRUTH</span>
+            <h1 class="section-title">Verified Resume</h1>
+            <p class="section-subtitle">
+              Authentic curriculum vitae of Ishmeet Singh. Download or inspect via the interactive viewer below.
+            </p>
+          </header>
+
+          <div class="resume-viewer-card">
+            <div class="resume-topbar">
+              <div class="resume-status-badge">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                  <polyline points="14 2 14 8 20 8"></polyline>
+                </svg>
+                <span>Verified Official Document · PDF</span>
+              </div>
+
+              <div class="resume-actions">
+                <a href="/documents/ishmeet_singh_resume.pdf" target="_blank" rel="noopener noreferrer" class="btn-subtle">
+                  <span>Open in New Tab ↗</span>
+                </a>
+                <a href="/documents/ishmeet_singh_resume.pdf" download="Ishmeet_Singh_Resume.pdf" class="btn-primary" style="font-size: 0.8125rem; padding: 0.5rem 1rem;">
+                  <span>Download Resume (PDF)</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Embedded PDF Frame -->
+            <div class="resume-iframe-container">
+              <iframe 
+                src="/documents/ishmeet_singh_resume.pdf#toolbar=1" 
+                title="Ishmeet Singh Official Resume" 
+                class="resume-iframe"
+                loading="lazy"
+              ></iframe>
+            </div>
+
+            <!-- Accessible Plaintext Summary Fallback -->
+            <div style="margin-top: 2rem; border-top: 1px solid var(--border-hairline); padding-top: 1.5rem;">
+              <h3 style="font-size: 1.125rem; font-weight: 700; margin-bottom: 0.75rem;">Structured Resume Overview</h3>
+              <p style="font-size: 0.875rem; color: var(--text-secondary); line-height: 1.6;">
+                <strong>Ishmeet Singh</strong> · Cybersecurity &amp; Generative AI Enthusiast · Nabha, Patiala &amp; Mohali, Punjab<br>
+                <strong>Education:</strong> B.Tech CSE (Chandigarh University, 2025–2029, CGPA 8.45), CBSE Senior Secondary (U.M.P.S, 2023–2024), Matriculation (U.M.P.S, 2021–2022)<br>
+                <strong>Technical Skills:</strong> Python, C++, Web Pentesting, OSINT, AI Security, Cloud Security, Git, GitHub<br>
+                <strong>Projects:</strong> KNULL, ZeroDayGPT, ZeroTrace, NEXUS<br>
+                <strong>Experience:</strong> HackHalt Cyber Intelligence Council (Cybersecurity Intern), Bluestock Fintech (Data Analyst Intern)<br>
+                <strong>Certifications:</strong> SC-500, CLLMSE, CLLMSP, AZ-900, AI-900, Null Origin CTF 2026, H7CTF 2026
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="siteFooter" class="site-footer-editorial" role="contentinfo"></footer>
+  </div>
+
+  <script type="module" src="/src/pages/resume.js"></script>
+</body>
+</html>

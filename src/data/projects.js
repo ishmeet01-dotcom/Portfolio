@@ -1,0 +1,221 @@
+/**
+ * Centralized Projects Data — Ishmeet Singh
+ * All descriptions, architectures, and capabilities strictly derived from code inspection
+ * of the actual GitHub repositories. No fabricated metrics or fictional features.
+ */
+
+export const projects = [
+  {
+    id: "knull",
+    featured: true,
+    index: "01",
+    name: "KNULL",
+    tagline: "Autonomous Offensive Security / Pentesting Agent",
+    category: "AI Security & Autonomous Agents",
+    status: "Active Research Prototype",
+    githubUrl: "https://github.com/ishmeet01-dotcom/KNULL.git",
+    liveDemoUrl: null,
+    summary:
+      "An AI-native autonomous application security platform designed to understand, analyze, and assess modern web applications through intelligent orchestration rather than simple scripted scans.",
+    architecture: {
+      headline: "Dual-Core Autonomous Architecture",
+      cores: [
+        {
+          name: "Execution Core",
+          responsibilities:
+            "Tasks, Agent dispatch, deterministic capability execution, security tool interfaces (Nmap, Nuclei, SQLMap, Playwright), evidence collection, and runtime state management."
+        },
+        {
+          name: "Intelligence Core",
+          responsibilities:
+            "Conductor planning, reasoning loops, security hypothesis generation, RAG knowledge retrieval, risk prioritization, and adaptive stopping conditions."
+        }
+      ],
+      workflow: "Observe → Understand → Retrieve Knowledge → Plan → Delegate → Execute → Evaluate → Update State"
+    },
+    technologies: [
+      "Python 3.11+",
+      "FastAPI",
+      "Alembic",
+      "Docker",
+      "AI Security Agents",
+      "Playwright",
+      "Nmap / Nuclei Integration",
+      "Pytest"
+    ],
+    capabilities: [
+      "Application architecture comprehension and attack surface discovery",
+      "Dynamic hypothesis formulation and multi-step investigation planning",
+      "Deterministic capability execution with sandboxed tools",
+      "Evidence-backed vulnerability findings with zero hallucinated exploits",
+      "Actionable remediation generation aligned with developer workflows"
+    ],
+    highlights: [
+      "Orchestration layer over existing battle-tested security CLI tools",
+      "Adaptive stopping logic to avoid redundant fuzzing and rate limit bans",
+      "Strict separation between low-level capabilities and high-level reasoning agents"
+    ]
+  },
+  {
+    id: "zerodaygpt",
+    featured: true,
+    index: "02",
+    name: "ZeroDayGPT",
+    tagline: "AI-Powered Cybersecurity Assistant & Red Team Platform",
+    category: "Offensive Security & LLM Tooling",
+    status: "Functional Prototype",
+    githubUrl: "https://github.com/ishmeet01-dotcom/ZeroDayGPT.git",
+    liveDemoUrl: null,
+    summary:
+      "A hacker-style full-stack cybersecurity assistant with real-time WebSocket token streaming, live Stack Exchange vulnerability Q&A integration, and an AI-powered fraud & threat detection pipeline.",
+    architecture: {
+      headline: "Streaming LLM & Multimodal Threat Pipeline",
+      cores: [
+        {
+          name: "Backend Service",
+          responsibilities:
+            "FastAPI with WebSocket streaming, OpenAI-compatible LLM gateway, API Key authorization, and Docker containerization."
+        },
+        {
+          name: "Threat Analysis Engine",
+          responsibilities:
+            "Tesseract OCR for image artifact ingestion + scikit-learn TF-IDF with Logistic Regression for email and text fraud detection."
+        }
+      ],
+      workflow: "Prompt / Artifact → OCR Ingestion → TF-IDF Classification → LLM Red Team Reasoning → WebSocket Stream"
+    },
+    technologies: [
+      "Python / FastAPI",
+      "React 18",
+      "Vite",
+      "WebSockets",
+      "OpenAI API",
+      "Tesseract OCR",
+      "scikit-learn (TF-IDF)",
+      "Stack Exchange API",
+      "Docker Compose"
+    ],
+    capabilities: [
+      "Low-latency real-time token streaming via dedicated WebSocket connection",
+      "CVE research assistance, reconnaissance planning, and exploit guidance",
+      "Threat artifact ingestion from uploaded email screenshots and logs",
+      "Integrated Stack Overflow security engineering Q&A feed",
+      "API key authenticated endpoints with full Docker deployment"
+    ],
+    highlights: [
+      "Combines deterministic ML classification with generative red-team reasoning",
+      "Hacker-inspired terminal UI with scanline aesthetics and tactile response",
+      "Designed specifically for day-to-day red teaming workflows"
+    ]
+  },
+  {
+    id: "zerotrace",
+    featured: true,
+    index: "03",
+    name: "ZeroTrace",
+    tagline: "AI-Powered API Attack Surface Management",
+    category: "Attack Surface Management & Recon",
+    status: "Verified on Live Vulnerable APIs",
+    githubUrl: "https://github.com/ishmeet01-dotcom/zerotrace.git",
+    liveDemoUrl: null,
+    summary:
+      "An automated API Attack Surface Management platform featuring an end-to-end 24-step scanning pipeline that uncovers shadow APIs, scores multi-factor risk, and maps findings to OWASP API Top 10 and MITRE ATT&CK.",
+    architecture: {
+      headline: "24-Stage Attack Surface Pipeline",
+      cores: [
+        {
+          name: "Discovery & Parser Engine",
+          responsibilities:
+            "Multi-source parsing (OpenAPI/Swagger, HTML forms, JS source regex, robots.txt, sitemaps), soft-404 baseline profiling, and framework-aware wordlist discovery."
+        },
+        {
+          name: "Risk & Graph Engine",
+          responsibilities:
+            "Multi-factor risk formula (Exposure × Sensitivity × Exploitability × Impact), NetworkX directed attack graph generation, and behavioral verification."
+        }
+      ],
+      workflow: "Crawl → Parse Multi-Source → Profile 404 Baseline → Wordlist Probing → Shadow Classification → Risk Scoring → Graph Build → Simulation"
+    },
+    technologies: [
+      "Python 3.11+",
+      "FastAPI",
+      "BeautifulSoup4",
+      "NetworkX",
+      "PyVis",
+      "SQLAlchemy / SQLite",
+      "Jinja2 & WeasyPrint",
+      "OWASP API 2023",
+      "MITRE ATT&CK"
+    ],
+    capabilities: [
+      "Automated discovery of shadow, deprecated, and debug endpoints",
+      "Soft-404 fingerprinting to eliminate SPA catch-all false positives",
+      "Multi-factor risk scoring normalized to 0–100 scale",
+      "Behavioral HTTP verification before escalating severity levels",
+      "NetworkX directed attack graph generation with interactive PyVis export",
+      "Simulation of attack scenarios: BOLA, credential bypass, and shadow data exfiltration"
+    ],
+    highlights: [
+      "Achieved 100% precision on a live vulnerable API environment",
+      "Comprehensive API Hygiene scoring across 6 architectural dimensions",
+      "Mutation-based endpoint exploration for version bumps and parameter injection"
+    ]
+  },
+  {
+    id: "nexus",
+    featured: true,
+    index: "04",
+    name: "NEXUS",
+    tagline: "Predictive Cyber Defence & Network Attack Forecasting",
+    category: "Network Defense & Machine Learning",
+    status: "Smart India Hackathon Prototype (SIH26153)",
+    githubUrl: "https://github.com/ishmeet01-dotcom/NEXUS.git",
+    liveDemoUrl: null,
+    summary:
+      "An AI-powered network attack forecasting platform built for SIH26153. Unlike traditional reactive IDS, Nexus models network traffic as timestamped states, simulates trajectory evolution, and forecasts K-step future ATT&CK-aligned attack stages.",
+    architecture: {
+      headline: "Observe → Understand → Simulate → Predict → Explain → Defend",
+      cores: [
+        {
+          name: "Forecasting Pipeline",
+          responsibilities:
+            "Telemetry ingest (PCAP, PCAPNG, CSV, or live demo stream), state discretization S(t), PyTorch LSTM world model, and K-step autoregressive trajectory prediction."
+        },
+        {
+          name: "SOC Console & Explainability",
+          responsibilities:
+            "FastAPI WebSocket broadcast, React console, force-directed network graph highlighting predicted attack paths, and SHAP feature attribution."
+        }
+      ],
+      workflow: "Telemetry → Timestamped State S(t) → LSTM World Model → K-Step Forecast → MITRE Stage Mapping → Live WebSocket SOC Stream"
+    },
+    technologies: [
+      "Python 3.11+",
+      "PyTorch (LSTM)",
+      "FastAPI",
+      "WebSockets",
+      "Scapy",
+      "scikit-learn",
+      "SHAP",
+      "React & TypeScript",
+      "Framer Motion",
+      "Recharts",
+      "react-force-graph-2d"
+    ],
+    capabilities: [
+      "Continuous forecast of attacker trajectory across MITRE ATT&CK stages",
+      "Real-time WebSocket streaming of network states and graph topology",
+      "Interactive force-directed graph with visually distinctive predicted attack paths",
+      "K-step forward forecast probability curves and telemetry metrics",
+      "Explainability drawer powered by SHAP feature attribution",
+      "Side-by-side comparison between legacy reactive IDS and predictive defense"
+    ],
+    highlights: [
+      "Designed specifically for Smart India Hackathon problem statement SIH26153",
+      "Self-contained demo simulation mode for instant deterministic presentation",
+      "Dual model support: Logistic Regression baseline and PyTorch LSTM recurrent model"
+    ]
+  }
+];
+
+export default projects;

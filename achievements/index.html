@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Achievements, Certifications &amp; Gallery — Ishmeet Singh</title>
+  <meta name="description" content="Verified certifications, hackathon contests, CTF rankings, and visual gallery of Ishmeet Singh.">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23c64527'><rect width='24' height='24' rx='6'/><text x='12' y='16' fill='white' font-family='sans-serif' font-size='10' font-weight='bold' text-anchor='middle'>IS</text></svg>">
+
+  <script>
+    (function() {
+      try {
+        var stored = localStorage.getItem('portfolio_theme_pref');
+        var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        var theme = stored ? stored : (prefersDark ? 'dark' : 'light');
+        if (theme === 'dark') {
+          document.documentElement.setAttribute('data-theme', 'dark');
+        } else {
+          document.documentElement.removeAttribute('data-theme');
+        }
+      } catch (e) {}
+    })();
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body id="top">
+  <div class="site-wrapper">
+    <header id="siteHeader" class="site-header" role="banner"></header>
+
+    <main id="mainContent" style="padding-top: 4rem; padding-bottom: 6rem;">
+      <section class="section-block" style="border: none;">
+        <div class="container">
+          <header class="section-header">
+            <span class="section-num-tag">05 / VERIFIED RECORDS</span>
+            <h1 class="section-title">Achievements &amp; Credentials</h1>
+            <p class="section-subtitle">
+              Certifications, international CTF results, awards, and authentic visual evidence.
+            </p>
+          </header>
+
+          <!-- 4 Navigation Tabs -->
+          <div class="achievements-tabs-bar" role="tablist" aria-label="Achievements Categories">
+            <button type="button" class="tab-btn active" data-tab="certifications" role="tab" aria-selected="true">
+              <span>Certifications</span>
+              <span class="tab-badge">7</span>
+            </button>
+            <button type="button" class="tab-btn" data-tab="achievements" role="tab" aria-selected="false">
+              <span>Achievements</span>
+              <span class="tab-badge">5</span>
+            </button>
+            <button type="button" class="tab-btn" data-tab="hackathons" role="tab" aria-selected="false">
+              <span>Hackathons / CTFs</span>
+              <span class="tab-badge">3</span>
+            </button>
+            <button type="button" class="tab-btn" data-tab="gallery" role="tab" aria-selected="false">
+              <span>Gallery</span>
+              <span class="tab-badge">4</span>
+            </button>
+          </div>
+
+          <div id="achievementsTabContent"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="siteFooter" class="site-footer-editorial" role="contentinfo"></footer>
+  </div>
+
+  <!-- Modals -->
+  <div class="modal-overlay" id="certModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="certModalTitle">
+    <div class="modal-window">
+      <div class="modal-header">
+        <h4 class="modal-title" id="certModalTitle">Upload New Certificate</h4>
+        <button type="button" class="modal-close-btn" aria-label="Close modal">✕</button>
+      </div>
+      <form id="formUploadCert">
+        <div class="modal-body" style="display: flex; flex-direction: column; gap: 1rem;">
+          <div class="form-group">
+            <label for="certName" class="form-label">CERTIFICATION NAME *</label>
+            <input type="text" id="certName" class="form-input" placeholder="e.g. Certified Cloud Security Professional" required />
+          </div>
+          <div class="form-group">
+            <label for="certIssuer" class="form-label">ISSUING ORGANIZATION *</label>
+            <input type="text" id="certIssuer" class="form-input" placeholder="e.g. OffSec, Microsoft, ISC2" required />
+          </div>
+          <div class="form-group">
+            <label for="certDate" class="form-label">ISSUE DATE (OPTIONAL)</label>
+            <input type="text" id="certDate" class="form-input" placeholder="e.g. October 2026" />
+          </div>
+          <div class="form-group">
+            <label for="certId" class="form-label">CREDENTIAL ID (OPTIONAL)</label>
+            <input type="text" id="certId" class="form-input" placeholder="e.g. SEC-84729" />
+          </div>
+          <div class="form-group">
+            <label for="certUrl" class="form-label">CREDENTIAL VERIFICATION URL (OPTIONAL)</label>
+            <input type="url" id="certUrl" class="form-input" placeholder="https://..." />
+          </div>
+          <div class="form-group">
+            <label for="certFile" class="form-label">CERTIFICATE IMAGE / PDF (OPTIONAL)</label>
+            <input type="file" id="certFile" class="form-input" accept="image/*,.pdf" />
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn-subtle modal-cancel-btn">Cancel</button>
+          <button type="submit" class="btn-primary" style="font-size: 0.8125rem;">Save Certificate</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="achievementModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="achModalTitle">
+    <div class="modal-window">
+      <div class="modal-header">
+        <h4 class="modal-title" id="achModalTitle">Add Verified Achievement</h4>
+        <button type="button" class="modal-close-btn" aria-label="Close modal">✕</button>
+      </div>
+      <form id="formAddAchievement">
+        <div class="modal-body" style="display: flex; flex-direction: column; gap: 1rem;">
+          <div class="form-group">
+            <label for="achTitle" class="form-label">ACHIEVEMENT TITLE *</label>
+            <input type="text" id="achTitle" class="form-input" placeholder="e.g. CTF First Place Flag" required />
+          </div>
+          <div class="form-group">
+            <label for="achOrg" class="form-label">ORGANIZATION / CONTEXT *</label>
+            <input type="text" id="achOrg" class="form-input" placeholder="e.g. Chandigarh University" required />
+          </div>
+          <div class="form-group">
+            <label for="achCat" class="form-label">CATEGORY</label>
+            <input type="text" id="achCat" class="form-input" placeholder="e.g. Competition / Leadership" />
+          </div>
+          <div class="form-group">
+            <label for="achSummary" class="form-label">SUMMARY DESCRIPTION *</label>
+            <textarea id="achSummary" class="form-textarea" placeholder="Detail the context..." required></textarea>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn-subtle modal-cancel-btn">Cancel</button>
+          <button type="submit" class="btn-primary" style="font-size: 0.8125rem;">Save Achievement</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="hackathonModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="hackModalTitle">
+    <div class="modal-window">
+      <div class="modal-header">
+        <h4 class="modal-title" id="hackModalTitle">Add Hackathon / CTF Record</h4>
+        <button type="button" class="modal-close-btn" aria-label="Close modal">✕</button>
+      </div>
+      <form id="formAddHackathon">
+        <div class="modal-body" style="display: flex; flex-direction: column; gap: 1rem;">
+          <div class="form-group">
+            <label for="hackName" class="form-label">EVENT NAME *</label>
+            <input type="text" id="hackName" class="form-input" placeholder="e.g. HackTheBox University CTF" required />
+          </div>
+          <div class="form-group">
+            <label for="hackCat" class="form-label">CATEGORY *</label>
+            <input type="text" id="hackCat" class="form-input" placeholder="e.g. Web Pentesting CTF" required />
+          </div>
+          <div class="form-group">
+            <label for="hackResult" class="form-label">RESULT *</label>
+            <input type="text" id="hackResult" class="form-input" placeholder="e.g. Certified Participant" required />
+          </div>
+          <div class="form-group">
+            <label for="hackDate" class="form-label">DATE (OPTIONAL)</label>
+            <input type="text" id="hackDate" class="form-input" placeholder="e.g. November 2026" />
+          </div>
+          <div class="form-group">
+            <label for="hackSummary" class="form-label">SUMMARY (OPTIONAL)</label>
+            <textarea id="hackSummary" class="form-textarea" placeholder="Brief summary of challenges solved..."></textarea>
+          </div>
+          <div class="form-group">
+            <label for="hackFile" class="form-label">CERTIFICATE IMAGE (OPTIONAL)</label>
+            <input type="file" id="hackFile" class="form-input" accept="image/*" />
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn-subtle modal-cancel-btn">Cancel</button>
+          <button type="submit" class="btn-primary" style="font-size: 0.8125rem;">Save CTF Record</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="mediaModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="mediaModalTitle">
+    <div class="modal-window">
+      <div class="modal-header">
+        <h4 class="modal-title" id="mediaModalTitle">Upload Media to Gallery</h4>
+        <button type="button" class="modal-close-btn" aria-label="Close modal">✕</button>
+      </div>
+      <form id="formUploadMedia">
+        <div class="modal-body" style="display: flex; flex-direction: column; gap: 1rem;">
+          <div class="form-group">
+            <label for="mediaTitle" class="form-label">MEDIA TITLE *</label>
+            <input type="text" id="mediaTitle" class="form-input" placeholder="e.g. CTF Squad Operation" required />
+          </div>
+          <div class="form-group">
+            <label for="mediaCat" class="form-label">CATEGORY</label>
+            <input type="text" id="mediaCat" class="form-input" placeholder="e.g. Event / Project Screenshot" />
+          </div>
+          <div class="form-group">
+            <label for="mediaCaption" class="form-label">CAPTION (OPTIONAL)</label>
+            <textarea id="mediaCaption" class="form-textarea" placeholder="Description of the media..."></textarea>
+          </div>
+          <div class="form-group">
+            <label for="mediaFile" class="form-label">IMAGE FILE *</label>
+            <input type="file" id="mediaFile" class="form-input" accept="image/*" required />
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn-subtle modal-cancel-btn">Cancel</button>
+          <button type="submit" class="btn-primary" style="font-size: 0.8125rem;">Upload Media</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script type="module" src="/src/pages/achievements.js"></script>
+</body>
+</html>

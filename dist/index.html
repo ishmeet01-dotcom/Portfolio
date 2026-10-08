@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ishmeet Singh — Cybersecurity &amp; Generative AI</title>
+  <meta name="description" content="Personal digital portfolio of Ishmeet Singh, Computer Science student specializing in offensive security, red teaming, vulnerability research, and generative AI security tooling.">
+  <meta name="keywords" content="Ishmeet Singh, Cybersecurity, Generative AI, Offensive Security, Red Teaming, Vulnerability Research, Chandigarh University, ZeroDayGPT, KNULL, ZeroTrace, NEXUS">
+  <meta name="author" content="Ishmeet Singh">
+  <meta property="og:title" content="Ishmeet Singh — Cybersecurity &amp; Generative AI">
+  <meta property="og:description" content="Breaking things to understand how they work—that’s where I thrive. Personal portfolio and security research platform.">
+  <meta property="og:type" content="website">
+  
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23c64527'><rect width='24' height='24' rx='6'/><text x='12' y='16' fill='white' font-family='sans-serif' font-size='10' font-weight='bold' text-anchor='middle'>IS</text></svg>">
+
+  <!-- Immediate Theme Restoration to prevent flash -->
+  <script>
+    (function() {
+      try {
+        var stored = localStorage.getItem('portfolio_theme_pref');
+        var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        var theme = stored ? stored : (prefersDark ? 'dark' : 'light');
+        if (theme === 'dark') {
+          document.documentElement.setAttribute('data-theme', 'dark');
+        } else {
+          document.documentElement.removeAttribute('data-theme');
+        }
+      } catch (e) {}
+    })();
+  </script>
+
+  <!-- Premium Editorial Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script type="module" crossorigin src="/assets/main-DjlCt67Y.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/siteNav-e8-O1-lu.js">
+  <link rel="modulepreload" crossorigin href="/assets/experience-BSYqZUD3.js">
+  <link rel="modulepreload" crossorigin href="/assets/skills-CZUgICWH.js">
+  <link rel="modulepreload" crossorigin href="/assets/education-U3nDwZpN.js">
+  <link rel="modulepreload" crossorigin href="/assets/toast-Cci4BNr3.js">
+  <link rel="modulepreload" crossorigin href="/assets/achievementsManager-DIaQ_WaF.js">
+  <link rel="modulepreload" crossorigin href="/assets/contactForm-DLHbOcnf.js">
+  <link rel="stylesheet" crossorigin href="/assets/siteNav-DHcsZiAi.css">
+</head>
+<body id="top">
+  <div class="site-wrapper">
+    <!-- Sticky Floating Navigation Header -->
+    <header id="siteHeader" class="site-header" role="banner"></header>
+
+    <main id="mainContent">
+      <!-- 00 / HERO SECTION — ASYMMETRICAL EDITORIAL COMPOSITION -->
+      <section class="hero-editorial" id="home" aria-label="Ishmeet Singh Introduction">
+        <div class="container">
+          <div class="hero-grid">
+            <!-- Left Narrative & Statement -->
+            <div class="hero-content-col">
+              <div class="hero-meta-strip">
+                <span class="meta-status-pill">
+                  <span class="status-dot"></span>
+                  <span>ACTIVE // RED TEAM RESEARCH</span>
+                </span>
+                <span>MOHALI, PUNJAB, INDIA</span>
+                <span>CHANDIGARH UNIVERSITY</span>
+              </div>
+
+              <h1 class="hero-name">ISHMEET SINGH</h1>
+              
+              <div class="hero-role-badge">
+                Cybersecurity &amp; Generative AI Enthusiast
+              </div>
+
+              <!-- Central Mandated Tagline -->
+              <blockquote class="hero-tagline-statement">
+                “Breaking things to understand how they work—that’s where I thrive.”
+              </blockquote>
+
+              <p class="hero-intro-text">
+                I’m a Computer Science student focused on cybersecurity, offensive security, and generative AI. I explore how systems break, how vulnerabilities can be discovered and analyzed, and how intelligent tooling can make security research more effective.
+              </p>
+
+              <div class="hero-actions">
+                <a href="#projects-experience" class="btn-primary" id="btnExploreWork">
+                  <span>Explore Projects</span>
+                  <span>↓</span>
+                </a>
+                <a href="/resume/" class="btn-outline" id="btnViewResumeHero">
+                  <span>View Resume</span>
+                  <span>↗</span>
+                </a>
+                <a href="#contact" class="btn-subtle" id="btnContactHero">
+                  <span>Get in Touch</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Right Asymmetric Verified Identity Dossier Card -->
+            <div class="hero-visual-col">
+              <aside class="hero-identity-card" aria-label="Digital Identity Dossier">
+                <div class="identity-header">
+                  <span class="identity-meta-label">RESEARCH IDENTITY DOSSIER</span>
+                  <span class="identity-id-code">UID: 25BAI10010</span>
+                </div>
+
+                <div class="identity-badge-row">
+                  <div class="identity-avatar-frame">
+                    <img src="/assets/github_avatar.png" alt="Ishmeet Singh GitHub Identity" class="identity-avatar-img" />
+                  </div>
+                  <div class="identity-titles">
+                    <h3>Ishmeet Singh</h3>
+                    <p>B.Tech Computer Science Engineering</p>
+                    <p style="color: var(--accent); font-weight: 600; margin-top: 0.15rem;">Chandigarh University · CGPA 8.45</p>
+                  </div>
+                </div>
+
+                <div class="identity-credentials-list">
+                  <div class="cred-item-row">
+                    <span class="cred-name">H7CTF 2026</span>
+                    <span class="cred-tag">VERIFIED CTF</span>
+                  </div>
+                  <div class="cred-item-row">
+                    <span class="cred-name">Null Origin CTF 2026</span>
+                    <span class="cred-tag">24-HR CONTEST</span>
+                  </div>
+                  <div class="cred-item-row">
+                    <span class="cred-name">SC-500 Cloud &amp; AI Security</span>
+                    <span class="cred-tag">CREDENTIAL</span>
+                  </div>
+                  <div class="cred-item-row">
+                    <span class="cred-name">AZ-900 / AI-900</span>
+                    <span class="cred-tag">MICROSOFT</span>
+                  </div>
+                </div>
+
+                <div class="identity-telemetry-box">
+                  <div class="telemetry-line">
+                    <span class="telemetry-key">CORE FOCUS</span>
+                    <span class="telemetry-val">Offensive Sec · LLM Agents</span>
+                  </div>
+                  <div class="telemetry-line">
+                    <span class="telemetry-key">AFFILIATION</span>
+                    <span class="telemetry-val">Cysecsphere Club</span>
+                  </div>
+                  <div class="telemetry-line">
+                    <span class="telemetry-key">LOCATION</span>
+                    <span class="telemetry-val">Mohali, Punjab, IN</span>
+                  </div>
+                  <div class="telemetry-line">
+                    <span class="telemetry-key">STATUS</span>
+                    <span class="telemetry-val" style="color: var(--status-success);">Active Builder</span>
+                  </div>
+                </div>
+              </aside>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 01 / ABOUT SECTION -->
+      <section class="section-block" id="about" aria-label="About Ishmeet Singh">
+        <div class="container">
+          <header class="section-header">
+            <span class="section-num-tag">01 / ABOUT IDENTITY</span>
+            <h2 class="section-title">Perspective, Method &amp; Mindset</h2>
+            <p class="section-subtitle">
+              Bridging vulnerability research, autonomous red-teaming agents, and systems-level architecture.
+            </p>
+          </header>
+
+          <div class="about-grid-layout">
+            <div class="about-prose">
+              <p>
+                I’m a Computer Science student focused on cybersecurity, offensive security, and generative AI. I explore how systems break, how vulnerabilities can be discovered and analyzed, and how intelligent tooling can make security research more effective.
+              </p>
+              <p>
+                My work spans <strong>vulnerability research</strong>, <strong>reconnaissance</strong>, <strong>attack-surface analysis</strong>, <strong>AI-powered security tooling</strong>, and <strong>full-stack development</strong>. Rather than running generic scripts, I focus on the underlying architecture: how an API’s shadow routes leak state, how LLM reasoning loops can conduct deterministic exploit verification, and how predictive models can forecast multi-stage attack paths before defenses are breached.
+              </p>
+              <p>
+                Driven by a genuine curiosity for how systems break — and how intelligent tooling can accelerate the work of finding out, I actively build open-source tools, participate in 24-hour CTF competitions, and contribute to the <strong>Cysecsphere club</strong> at Chandigarh University.
+              </p>
+
+              <div style="display: flex; gap: 1rem; margin-top: 2rem;">
+                <a href="#projects-experience" class="btn-primary" style="font-size: 0.8125rem;">Explore Built Tooling ↓</a>
+                <a href="/about/" class="btn-subtle">Read Extended Dossier ↗</a>
+              </div>
+            </div>
+
+            <div class="about-meta-column">
+              <!-- Research Interests -->
+              <div class="meta-group-card">
+                <div class="meta-group-title">RESEARCH INTERESTS &amp; PURSUITS</div>
+                <div class="badges-flow">
+                  <span class="tech-badge">CTF Challenges</span>
+                  <span class="tech-badge">Tech Writing</span>
+                  <span class="tech-badge">Open Source</span>
+                  <span class="tech-badge">Security Research</span>
+                  <span class="tech-badge">Vulnerability Assessment</span>
+                </div>
+              </div>
+
+              <!-- Languages -->
+              <div class="meta-group-card">
+                <div class="meta-group-title">SPOKEN &amp; WRITTEN LANGUAGES</div>
+                <div style="display: flex; flex-direction: column; gap: 0.5rem; font-size: 0.875rem;">
+                  <div style="display: flex; justify-content: space-between;">
+                    <strong>English</strong>
+                    <span style="font-family: var(--font-mono); color: var(--text-muted); font-size: 0.75rem;">Professional Working</span>
+                  </div>
+                  <div style="display: flex; justify-content: space-between;">
+                    <strong>Hindi</strong>
+                    <span style="font-family: var(--font-mono); color: var(--text-muted); font-size: 0.75rem;">Native / Bilingual</span>
+                  </div>
+                  <div style="display: flex; justify-content: space-between;">
+                    <strong>Punjabi</strong>
+                    <span style="font-family: var(--font-mono); color: var(--text-muted); font-size: 0.75rem;">Native / Bilingual</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Community Affiliation -->
+              <div class="meta-group-card">
+                <div class="meta-group-title">CAMPUS COMMUNITY</div>
+                <div style="font-size: 0.875rem;">
+                  <strong>Cysecsphere Club</strong>
+                  <p style="color: var(--text-secondary); margin-top: 0.25rem;">Active member participating in offensive security labs, peer mentorship, and CTF squad operations.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 02 / PROJECTS & EXPERIENCE SECTION -->
+      <section class="section-block" id="projects-experience" aria-label="Projects and Professional Experience">
+        <div class="container">
+          <header class="section-header">
+            <span class="section-num-tag">02 / PROJECTS &amp; EXPERIENCE</span>
+            <h2 class="section-title">Engineered Security Systems</h2>
+            <p class="section-subtitle">
+              Autonomous agents, real-time threat detection, API attack surface management, and predictive network defense.
+            </p>
+          </header>
+
+          <!-- Projects Editorial Stack -->
+          <div class="projects-editorial-stack" id="projectsStack">
+            <!-- Dynamically populated from src/data/projects.js -->
+          </div>
+
+          <!-- Professional Experience Timeline -->
+          <div class="experience-block" id="experienceSection">
+            <header style="margin-bottom: 2rem;">
+              <span class="section-num-tag" style="font-size: 0.75rem;">PRACTICE &amp; APPLIED ROLES</span>
+              <h3 style="font-size: 1.75rem; font-weight: 800;">Professional Experience</h3>
+            </header>
+
+            <div class="experience-grid" id="experienceGrid">
+              <!-- Dynamically populated from src/data/experience.js -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 03 / TECHNICAL SKILLS SECTION -->
+      <section class="section-block" id="skills" aria-label="Technical and Interpersonal Skills">
+        <div class="container">
+          <header class="section-header">
+            <span class="section-num-tag">03 / TECHNICAL ARSENAL</span>
+            <h2 class="section-title">Skills &amp; Capabilities</h2>
+            <p class="section-subtitle">
+              Strictly verified toolsets applied across vulnerability discovery, AI agents, and systems programming.
+            </p>
+          </header>
+
+          <div class="skills-layout-grid">
+            <div>
+              <div style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-muted); font-weight: 700; text-transform: uppercase; margin-bottom: 1rem;">
+                TECHNICAL CORE
+              </div>
+              <div class="skills-technical-grid" id="technicalSkillsGrid">
+                <!-- Dynamically populated from src/data/skills.js -->
+              </div>
+            </div>
+
+            <div>
+              <div style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-muted); font-weight: 700; text-transform: uppercase; margin-bottom: 1rem;">
+                INTERPERSONAL &amp; COGNITIVE
+              </div>
+              <div class="skills-interpersonal-column" id="interpersonalSkillsColumn">
+                <!-- Dynamically populated from src/data/skills.js -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 04 / EDUCATION SECTION -->
+      <section class="section-block" id="education" aria-label="Academic Background">
+        <div class="container">
+          <header class="section-header">
+            <span class="section-num-tag">04 / ACADEMIC BACKGROUND</span>
+            <h2 class="section-title">Formal Engineering Education</h2>
+            <p class="section-subtitle">
+              Foundational coursework in systems design, computing architecture, and computer science engineering.
+            </p>
+          </header>
+
+          <div class="education-editorial-grid" id="educationContainer">
+            <!-- Dynamically populated from src/data/education.js -->
+          </div>
+        </div>
+      </section>
+
+      <!-- 05 / ACHIEVEMENTS & CREDENTIALS SECTION (WITH 4 TABS) -->
+      <section class="section-block" id="achievements" aria-label="Achievements, Certifications and Gallery">
+        <div class="container">
+          <header class="section-header">
+            <span class="section-num-tag">05 / VERIFIED RECORDS</span>
+            <h2 class="section-title">Achievements &amp; Credentials</h2>
+            <p class="section-subtitle">
+              Certifications, international CTF results, awards, and authentic visual evidence.
+            </p>
+          </header>
+
+          <!-- 4 Navigation Tabs -->
+          <div class="achievements-tabs-bar" role="tablist" aria-label="Achievements Categories">
+            <button type="button" class="tab-btn active" data-tab="certifications" role="tab" aria-selected="true">
+              <span>Certifications</span>
+              <span class="tab-badge">7</span>
+            </button>
+            <button type="button" class="tab-btn" data-tab="achievements" role="tab" aria-selected="false">
+              <span>Achievements</span>
+              <span class="tab-badge">5</span>
+            </button>
+            <button type="button" class="tab-btn" data-tab="hackathons" role="tab" aria-selected="false">
+              <span>Hackathons / CTFs</span>
+              <span class="tab-badge">3</span>
+            </button>
+            <button type="button" class="tab-btn" data-tab="gallery" role="tab" aria-selected="false">
+              <span>Gallery</span>
+              <span class="tab-badge">4</span>
+            </button>
+          </div>
+
+          <!-- Dynamic Tab Content Body -->
+          <div id="achievementsTabContent">
+            <!-- Managed by src/modules/achievementsManager.js -->
+          </div>
+        </div>
+      </section>
+
+      <!-- 06 / COA LAB INTEGRATION & LAUNCHPAD -->
+      <section class="section-block" id="coa-lab" aria-label="Computer Organisation & Architecture Lab">
+        <div class="container">
+          <header class="section-header">
+            <span class="section-num-tag">06 / INTERACTIVE LEARNING</span>
+            <h2 class="section-title">COA Interactive Laboratory</h2>
+            <p class="section-subtitle">
+              Interactive simulators for Number System conversions, arithmetic expressions, and CPU Instruction Cycle execution.
+            </p>
+          </header>
+
+          <div style="background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-lg); padding: 3rem; display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; box-shadow: var(--shadow-md);">
+            <div>
+              <span class="meta-status-pill" style="margin-bottom: 1rem;">FUNCTIONAL SIMULATORS PRESERVED</span>
+              <h3 style="font-size: 1.85rem; font-weight: 800; margin-bottom: 0.75rem;">Explore Computer Architecture in Real-Time</h3>
+              <p style="font-size: 1rem; color: var(--text-secondary); line-height: 1.7; margin-bottom: 1.5rem;">
+                Experience the hardware reality underneath software: Convert between Binary, Octal, Decimal, and Hexadecimal with pedagogical breakdowns, and step through CPU micro-operations (Fetch, Decode, Execute, Store) across registers PC, MAR, MBR, IR, and AC.
+              </p>
+              <div style="display: flex; gap: 1rem;">
+                <a href="/coa/" class="btn-primary">
+                  <span>Launch Full COA Lab</span>
+                  <span>→</span>
+                </a>
+              </div>
+            </div>
+
+            <div style="background: var(--bg-surface-elevated); border: 1px solid var(--border-hairline); border-radius: var(--radius-md); overflow: hidden; box-shadow: var(--shadow-sm);">
+              <img src="/assets/coa_app.png" alt="COA Lab Simulator Preview" style="width: 100%; height: auto; display: block;" loading="lazy" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 07 / RESUME SECTION -->
+      <section class="section-block" id="resume" aria-label="Ishmeet Singh Resume">
+        <div class="container">
+          <header class="section-header">
+            <span class="section-num-tag">07 / SOURCE OF TRUTH</span>
+            <h2 class="section-title">Verified Resume</h2>
+            <p class="section-subtitle">
+              Direct access to the official curriculum vitae of Ishmeet Singh.
+            </p>
+          </header>
+
+          <div class="resume-viewer-card">
+            <div class="resume-topbar">
+              <div class="resume-status-badge">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                  <polyline points="14 2 14 8 20 8"></polyline>
+                </svg>
+                <span>Official PDF Document · Ishmeet Singh</span>
+              </div>
+
+              <div class="resume-actions">
+                <a href="/documents/ishmeet_singh_resume.pdf" target="_blank" rel="noopener noreferrer" class="btn-subtle">
+                  <span>Open in New Tab ↗</span>
+                </a>
+                <a href="/documents/ishmeet_singh_resume.pdf" download="Ishmeet_Singh_Resume.pdf" class="btn-primary" style="font-size: 0.8125rem; padding: 0.5rem 1rem;">
+                  <span>Download Resume (PDF)</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Embedded PDF Frame -->
+            <div class="resume-iframe-container">
+              <iframe 
+                src="/documents/ishmeet_singh_resume.pdf#toolbar=1" 
+                title="Ishmeet Singh Official Resume" 
+                class="resume-iframe"
+                loading="lazy"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 08 / CONTACT SECTION -->
+      <section class="section-block" id="contact" aria-label="Contact Ishmeet Singh">
+        <div class="container">
+          <header class="section-header">
+            <span class="section-num-tag">08 / COMMUNICATIONS</span>
+            <h2 class="section-title">Initiate Contact</h2>
+            <p class="section-subtitle">
+              Open for security research inquiries, red-teaming collaborations, and technical discussions.
+            </p>
+          </header>
+
+          <div class="contact-editorial-card">
+            <div class="contact-grid">
+              <!-- Left Direct Contact Info -->
+              <div class="contact-info-col">
+                <h3>Let's collaborate.</h3>
+                <p class="contact-sub">
+                  Whether you are building autonomous security tools, organizing CTF events, or exploring vulnerability research opportunities, reach out directly.
+                </p>
+
+                <div class="contact-channels-list">
+                  <div class="contact-channel-item">
+                    <span class="channel-label">EMAIL</span>
+                    <a href="mailto:ishmeet1180@cuchd.in" class="channel-val">ishmeet1180@cuchd.in</a>
+                  </div>
+
+                  <div class="contact-channel-item">
+                    <span class="channel-label">PHONE</span>
+                    <a href="tel:+916284981905" class="channel-val">+91 6284981905</a>
+                  </div>
+
+                  <div class="contact-channel-item">
+                    <span class="channel-label">LINKEDIN</span>
+                    <a href="https://www.linkedin.com/in/ishmeet-singh-93636b377/" target="_blank" rel="noopener noreferrer" class="channel-val">linkedin.com/in/ishmeet-singh ↗</a>
+                  </div>
+
+                  <div class="contact-channel-item">
+                    <span class="channel-label">GITHUB</span>
+                    <a href="https://github.com/ishmeet01-dotcom" target="_blank" rel="noopener noreferrer" class="channel-val">github.com/ishmeet01-dotcom ↗</a>
+                  </div>
+
+                  <div class="contact-channel-item">
+                    <span class="channel-label">LOCATION</span>
+                    <span class="channel-val">Mohali, Punjab, India</span>
+                  </div>
+                </div>
+
+                <div style="margin-top: 1.5rem;">
+                  <button type="button" id="copyEmailBtn" class="btn-subtle">
+                    Copy Primary Email to Clipboard
+                  </button>
+                </div>
+              </div>
+
+              <!-- Right Truly Functional Form -->
+              <div class="contact-form-col">
+                <form id="contactForm">
+                  <div class="form-group">
+                    <label for="contactName" class="form-label">YOUR NAME</label>
+                    <input type="text" id="contactName" class="form-input" placeholder="e.g. Alex Vance" required />
+                  </div>
+
+                  <div class="form-group">
+                    <label for="contactEmail" class="form-label">YOUR EMAIL</label>
+                    <input type="email" id="contactEmail" class="form-input" placeholder="e.g. alex@security.org" required />
+                  </div>
+
+                  <div class="form-group">
+                    <label for="contactSubject" class="form-label">SUBJECT</label>
+                    <input type="text" id="contactSubject" class="form-input" placeholder="e.g. Red Teaming Collaboration" required />
+                  </div>
+
+                  <div class="form-group">
+                    <label for="contactMessage" class="form-label">MESSAGE</label>
+                    <textarea id="contactMessage" class="form-textarea" placeholder="Detail your project or question..." required></textarea>
+                  </div>
+
+                  <button type="submit" class="btn-primary" style="width: 100%; margin-top: 0.5rem;">
+                    <span>Send Message via Email Client</span>
+                    <span>→</span>
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Editorial Colophon Footer -->
+    <footer id="siteFooter" class="site-footer-editorial" role="contentinfo"></footer>
+  </div>
+
+  <!-- ========================================================================
+       MODAL DIALOGS (FOR UPLOADS AND LIGHTBOX)
+       ======================================================================== -->
+  
+  <!-- 1. Certificate Upload Modal -->
+  <div class="modal-overlay" id="certModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="certModalTitle">
+    <div class="modal-window">
+      <div class="modal-header">
+        <h4 class="modal-title" id="certModalTitle">Upload New Certificate</h4>
+        <button type="button" class="modal-close-btn" aria-label="Close modal">✕</button>
+      </div>
+      <form id="formUploadCert">
+        <div class="modal-body" style="display: flex; flex-direction: column; gap: 1rem;">
+          <div class="form-group">
+            <label for="certName" class="form-label">CERTIFICATION NAME *</label>
+            <input type="text" id="certName" class="form-input" placeholder="e.g. Certified Cloud Security Professional" required />
+          </div>
+          <div class="form-group">
+            <label for="certIssuer" class="form-label">ISSUING ORGANIZATION *</label>
+            <input type="text" id="certIssuer" class="form-input" placeholder="e.g. OffSec, Microsoft, ISC2" required />
+          </div>
+          <div class="form-group">
+            <label for="certDate" class="form-label">ISSUE DATE (OPTIONAL)</label>
+            <input type="text" id="certDate" class="form-input" placeholder="e.g. October 2026" />
+          </div>
+          <div class="form-group">
+            <label for="certId" class="form-label">CREDENTIAL ID (OPTIONAL)</label>
+            <input type="text" id="certId" class="form-input" placeholder="e.g. SEC-84729" />
+          </div>
+          <div class="form-group">
+            <label for="certUrl" class="form-label">CREDENTIAL VERIFICATION URL (OPTIONAL)</label>
+            <input type="url" id="certUrl" class="form-input" placeholder="https://..." />
+          </div>
+          <div class="form-group">
+            <label for="certFile" class="form-label">CERTIFICATE IMAGE / PDF (OPTIONAL)</label>
+            <input type="file" id="certFile" class="form-input" accept="image/*,.pdf" />
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn-subtle modal-cancel-btn">Cancel</button>
+          <button type="submit" class="btn-primary" style="font-size: 0.8125rem;">Save Certificate</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- 2. Achievement Modal -->
+  <div class="modal-overlay" id="achievementModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="achModalTitle">
+    <div class="modal-window">
+      <div class="modal-header">
+        <h4 class="modal-title" id="achModalTitle">Add Verified Achievement</h4>
+        <button type="button" class="modal-close-btn" aria-label="Close modal">✕</button>
+      </div>
+      <form id="formAddAchievement">
+        <div class="modal-body" style="display: flex; flex-direction: column; gap: 1rem;">
+          <div class="form-group">
+            <label for="achTitle" class="form-label">ACHIEVEMENT TITLE *</label>
+            <input type="text" id="achTitle" class="form-input" placeholder="e.g. CTF First Place Flag" required />
+          </div>
+          <div class="form-group">
+            <label for="achOrg" class="form-label">ORGANIZATION / CONTEXT *</label>
+            <input type="text" id="achOrg" class="form-input" placeholder="e.g. Chandigarh University" required />
+          </div>
+          <div class="form-group">
+            <label for="achCat" class="form-label">CATEGORY</label>
+            <input type="text" id="achCat" class="form-input" placeholder="e.g. Competition / Leadership" />
+          </div>
+          <div class="form-group">
+            <label for="achSummary" class="form-label">SUMMARY DESCRIPTION *</label>
+            <textarea id="achSummary" class="form-textarea" placeholder="Detail the context..." required></textarea>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn-subtle modal-cancel-btn">Cancel</button>
+          <button type="submit" class="btn-primary" style="font-size: 0.8125rem;">Save Achievement</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- 3. Hackathon Modal -->
+  <div class="modal-overlay" id="hackathonModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="hackModalTitle">
+    <div class="modal-window">
+      <div class="modal-header">
+        <h4 class="modal-title" id="hackModalTitle">Add Hackathon / CTF Record</h4>
+        <button type="button" class="modal-close-btn" aria-label="Close modal">✕</button>
+      </div>
+      <form id="formAddHackathon">
+        <div class="modal-body" style="display: flex; flex-direction: column; gap: 1rem;">
+          <div class="form-group">
+            <label for="hackName" class="form-label">EVENT NAME *</label>
+            <input type="text" id="hackName" class="form-input" placeholder="e.g. HackTheBox University CTF" required />
+          </div>
+          <div class="form-group">
+            <label for="hackCat" class="form-label">CATEGORY *</label>
+            <input type="text" id="hackCat" class="form-input" placeholder="e.g. Web Pentesting CTF" required />
+          </div>
+          <div class="form-group">
+            <label for="hackResult" class="form-label">RESULT *</label>
+            <input type="text" id="hackResult" class="form-input" placeholder="e.g. Certified Participant" required />
+          </div>
+          <div class="form-group">
+            <label for="hackDate" class="form-label">DATE (OPTIONAL)</label>
+            <input type="text" id="hackDate" class="form-input" placeholder="e.g. November 2026" />
+          </div>
+          <div class="form-group">
+            <label for="hackSummary" class="form-label">SUMMARY (OPTIONAL)</label>
+            <textarea id="hackSummary" class="form-textarea" placeholder="Brief summary of challenges solved..."></textarea>
+          </div>
+          <div class="form-group">
+            <label for="hackFile" class="form-label">CERTIFICATE IMAGE (OPTIONAL)</label>
+            <input type="file" id="hackFile" class="form-input" accept="image/*" />
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn-subtle modal-cancel-btn">Cancel</button>
+          <button type="submit" class="btn-primary" style="font-size: 0.8125rem;">Save CTF Record</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- 4. Media Upload Modal -->
+  <div class="modal-overlay" id="mediaModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="mediaModalTitle">
+    <div class="modal-window">
+      <div class="modal-header">
+        <h4 class="modal-title" id="mediaModalTitle">Upload Media to Gallery</h4>
+        <button type="button" class="modal-close-btn" aria-label="Close modal">✕</button>
+      </div>
+      <form id="formUploadMedia">
+        <div class="modal-body" style="display: flex; flex-direction: column; gap: 1rem;">
+          <div class="form-group">
+            <label for="mediaTitle" class="form-label">MEDIA TITLE *</label>
+            <input type="text" id="mediaTitle" class="form-input" placeholder="e.g. CTF Squad Operation" required />
+          </div>
+          <div class="form-group">
+            <label for="mediaCat" class="form-label">CATEGORY</label>
+            <input type="text" id="mediaCat" class="form-input" placeholder="e.g. Event / Project Screenshot" />
+          </div>
+          <div class="form-group">
+            <label for="mediaCaption" class="form-label">CAPTION (OPTIONAL)</label>
+            <textarea id="mediaCaption" class="form-textarea" placeholder="Description of the media..."></textarea>
+          </div>
+          <div class="form-group">
+            <label for="mediaFile" class="form-label">IMAGE FILE *</label>
+            <input type="file" id="mediaFile" class="form-input" accept="image/*" required />
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn-subtle modal-cancel-btn">Cancel</button>
+          <button type="submit" class="btn-primary" style="font-size: 0.8125rem;">Upload Media</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>

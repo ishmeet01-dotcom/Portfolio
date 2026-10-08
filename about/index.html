@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Ishmeet Singh — Cybersecurity &amp; Generative AI</title>
+  <meta name="description" content="Detailed background, technical philosophy, and offensive security research mindset of Ishmeet Singh.">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23c64527'><rect width='24' height='24' rx='6'/><text x='12' y='16' fill='white' font-family='sans-serif' font-size='10' font-weight='bold' text-anchor='middle'>IS</text></svg>">
+
+  <script>
+    (function() {
+      try {
+        var stored = localStorage.getItem('portfolio_theme_pref');
+        var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        var theme = stored ? stored : (prefersDark ? 'dark' : 'light');
+        if (theme === 'dark') {
+          document.documentElement.setAttribute('data-theme', 'dark');
+        } else {
+          document.documentElement.removeAttribute('data-theme');
+        }
+      } catch (e) {}
+    })();
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body id="top">
+  <div class="site-wrapper">
+    <header id="siteHeader" class="site-header" role="banner"></header>
+
+    <main id="mainContent" style="padding-top: 4rem; padding-bottom: 6rem;">
+      <section class="section-block" style="border: none;">
+        <div class="container">
+          <header class="section-header">
+            <span class="section-num-tag">01 / ABOUT IDENTITY</span>
+            <h1 class="section-title">Perspective, Method &amp; Mindset</h1>
+            <p class="section-subtitle">
+              “Breaking things to understand how they work—that’s where I thrive.”
+            </p>
+          </header>
+
+          <div class="about-grid-layout">
+            <div class="about-prose">
+              <p>
+                I’m a Computer Science student focused on cybersecurity, offensive security, and generative AI. I explore how systems break, how vulnerabilities can be discovered and analyzed, and how intelligent tooling can make security research more effective.
+              </p>
+              <p>
+                My work spans <strong>vulnerability research</strong>, <strong>reconnaissance</strong>, <strong>attack-surface analysis</strong>, <strong>AI-powered security tooling</strong>, and <strong>full-stack development</strong>. Rather than treating security as a checklist, I view modern software through an adversarial lens: reverse engineering API endpoints to uncover unauthenticated shadow routes, analyzing LLM reasoning pipelines for prompt injection risks, and building deterministic test harnesses that verify exploit hypotheses without guessing.
+              </p>
+              <p>
+                Currently pursuing a B.Tech in Computer Science Engineering at Chandigarh University, Mohali (CGPA: 8.45), I balance academic coursework with hands-on practice on TryHackMe, competitive 24-hour CTFs (such as Null Origin 2026 and H7CTF 2026), and active contributions to the university’s <strong>Cysecsphere club</strong>.
+              </p>
+
+              <div style="margin-top: 2.5rem; display: flex; gap: 1rem;">
+                <a href="/projects/" class="btn-primary">View Engineered Projects →</a>
+                <a href="/resume/" class="btn-outline">Open Official Resume ↗</a>
+              </div>
+            </div>
+
+            <div class="about-meta-column">
+              <div class="meta-group-card">
+                <div class="meta-group-title">RESEARCH FOCUS &amp; PURSUITS</div>
+                <div class="badges-flow">
+                  <span class="tech-badge">CTF Challenges</span>
+                  <span class="tech-badge">Tech Writing</span>
+                  <span class="tech-badge">Open Source</span>
+                  <span class="tech-badge">Security Research</span>
+                  <span class="tech-badge">Vulnerability Assessment</span>
+                </div>
+              </div>
+
+              <div class="meta-group-card">
+                <div class="meta-group-title">SPOKEN &amp; WRITTEN LANGUAGES</div>
+                <div style="display: flex; flex-direction: column; gap: 0.6rem; font-size: 0.875rem;">
+                  <div style="display: flex; justify-content: space-between;">
+                    <strong>English</strong>
+                    <span style="font-family: var(--font-mono); color: var(--text-muted); font-size: 0.75rem;">Professional Working</span>
+                  </div>
+                  <div style="display: flex; justify-content: space-between;">
+                    <strong>Hindi</strong>
+                    <span style="font-family: var(--font-mono); color: var(--text-muted); font-size: 0.75rem;">Native / Bilingual</span>
+                  </div>
+                  <div style="display: flex; justify-content: space-between;">
+                    <strong>Punjabi</strong>
+                    <span style="font-family: var(--font-mono); color: var(--text-muted); font-size: 0.75rem;">Native / Bilingual</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="meta-group-card">
+                <div class="meta-group-title">AFFILIATIONS &amp; LOCATION</div>
+                <div style="font-size: 0.875rem; line-height: 1.6;">
+                  <p><strong>Cysecsphere Club</strong> · Active Member</p>
+                  <p style="color: var(--text-secondary); margin-top: 0.35rem;">Chandigarh University, Mohali, Punjab</p>
+                  <p style="color: var(--text-muted); font-size: 0.8125rem; margin-top: 0.2rem;">Hometown: Nabha, Patiala, Punjab</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="siteFooter" class="site-footer-editorial" role="contentinfo"></footer>
+  </div>
+
+  <script type="module" src="/src/pages/about.js"></script>
+</body>
+</html>
