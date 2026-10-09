@@ -1,4 +1,4 @@
-import{i as r,p as l}from"./siteNav-e8-O1-lu.js";import{p as c,e as d}from"./experience-BSYqZUD3.js";import{t as m,i as p}from"./skills-CZUgICWH.js";import{e as o}from"./education-U3nDwZpN.js";import{i as v}from"./achievementsManager-DIaQ_WaF.js";import{i as u}from"./contactForm-DLHbOcnf.js";import"./toast-Cci4BNr3.js";document.addEventListener("DOMContentLoaded",()=>{r("home"),f(),v(),u()});function f(){y(),$(),g(),h()}function y(){const i=document.getElementById("projectsStack");i&&(i.innerHTML=c.map(e=>{const a=e.architecture.cores.map(s=>`
+import{i as r,p as l}from"./siteNav-e8-O1-lu.js";import{i as c}from"./coaLabEngine-Bou3to78.js";import{p as d,e as m}from"./experience-BSYqZUD3.js";import{t as p,i as v}from"./skills-CZUgICWH.js";import{e as o}from"./education-U3nDwZpN.js";import{i as u}from"./achievementsManager-DIaQ_WaF.js";import{i as f}from"./contactForm-DLHbOcnf.js";import"./toast-Cci4BNr3.js";function y(a){document.readyState==="loading"?document.addEventListener("DOMContentLoaded",a):a()}y(()=>{r("home"),g(),u(),c(),f()});function g(){$(),h(),b(),E()}function $(){const a=document.getElementById("projectsStack");a&&(a.innerHTML=d.map(e=>{const i=e.architecture.cores.map(s=>`
       <div>
         <div class="core-item-name">${s.name}</div>
         <div class="core-item-desc">${s.responsibilities}</div>
@@ -25,7 +25,7 @@ import{i as r,p as l}from"./siteNav-e8-O1-lu.js";import{p as c,e as d}from"./exp
         <div class="project-arch-box">
           <div class="project-arch-title">ARCHITECTURE // ${e.architecture.headline}</div>
           <div class="project-cores-grid">
-            ${a}
+            ${i}
           </div>
           <div class="project-workflow-strip">
             <strong>PIPELINE:</strong> ${e.architecture.workflow}
@@ -55,7 +55,7 @@ import{i as r,p as l}from"./siteNav-e8-O1-lu.js";import{p as c,e as d}from"./exp
           </button>
         </div>
       </article>
-    `}).join(""))}function $(){const i=document.getElementById("experienceGrid");i&&(i.innerHTML=d.map(e=>{const a=e.contributions.map(t=>`<li>${t}</li>`).join(""),n=e.technologies.map(t=>`<span class="stack-pill">${t}</span>`).join("");return`
+    `}).join(""))}function h(){const a=document.getElementById("experienceGrid");a&&(a.innerHTML=m.map(e=>{const i=e.contributions.map(t=>`<li>${t}</li>`).join(""),n=e.technologies.map(t=>`<span class="stack-pill">${t}</span>`).join("");return`
       <div class="exp-card">
         <div class="exp-header">
           <h4 class="exp-role">${e.role}</h4>
@@ -64,27 +64,27 @@ import{i as r,p as l}from"./siteNav-e8-O1-lu.js";import{p as c,e as d}from"./exp
         <div class="exp-org">${e.organization} · ${e.location}</div>
         <p style="font-size: 0.875rem; color: var(--text-secondary); margin-bottom: 1rem;">${e.summary}</p>
         <ul class="exp-bullets" style="margin-bottom: 1.25rem;">
-          ${a}
+          ${i}
         </ul>
         <div style="display: flex; flex-wrap: wrap; gap: 0.35rem;">
           ${n}
         </div>
       </div>
-    `}).join(""))}function g(){const i=document.getElementById("technicalSkillsGrid"),e=document.getElementById("interpersonalSkillsColumn");i&&(i.innerHTML=m.map(a=>`
+    `}).join(""))}function b(){const a=document.getElementById("technicalSkillsGrid"),e=document.getElementById("interpersonalSkillsColumn");a&&(a.innerHTML=p.map(i=>`
       <div class="skill-tech-card">
-        <div class="skill-cat-label">${a.category}</div>
+        <div class="skill-cat-label">${i.category}</div>
         <div class="skill-title-row">
-          <h4 class="skill-name">${a.name}</h4>
-          <span class="skill-level-pill">${a.level}</span>
+          <h4 class="skill-name">${i.name}</h4>
+          <span class="skill-level-pill">${i.level}</span>
         </div>
-        <p class="skill-focus-note">${a.focus}</p>
+        <p class="skill-focus-note">${i.focus}</p>
       </div>
-    `).join("")),e&&(e.innerHTML=p.map(a=>`
+    `).join("")),e&&(e.innerHTML=v.map(i=>`
       <div class="interpersonal-item">
-        <h4 class="interpersonal-title">${a.name}</h4>
-        <p class="interpersonal-desc">${a.description}</p>
+        <h4 class="interpersonal-title">${i.name}</h4>
+        <p class="interpersonal-desc">${i.description}</p>
       </div>
-    `).join(""))}function h(){const i=document.getElementById("educationContainer");if(!i)return;const e=o.find(t=>t.dominant),n=o.filter(t=>!t.dominant).map(t=>`
+    `).join(""))}function E(){const a=document.getElementById("educationContainer");if(!a)return;const e=o.find(t=>t.dominant),n=o.filter(t=>!t.dominant).map(t=>`
     <div class="edu-card-secondary">
       <div style="font-family: var(--font-mono); font-size: 0.6875rem; color: var(--text-muted); margin-bottom: 0.25rem;">
         ${t.period} · ${t.gradeLabel}: ${t.gradeValue}
@@ -93,7 +93,7 @@ import{i as r,p as l}from"./siteNav-e8-O1-lu.js";import{p as c,e as d}from"./exp
       <div class="edu-secondary-inst">${t.institution}, ${t.location}</div>
       <p style="font-size: 0.8125rem; color: var(--text-secondary); line-height: 1.4;">${t.summary}</p>
     </div>
-  `).join("");i.innerHTML=`
+  `).join("");a.innerHTML=`
     <div class="edu-card-dominant">
       <span class="edu-tag-dominant">HIGHER EDUCATION &amp; UNDERGRADUATE</span>
       <h3 class="edu-degree-dominant">${e.degree}</h3>

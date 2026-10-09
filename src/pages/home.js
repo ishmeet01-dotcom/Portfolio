@@ -5,6 +5,7 @@
 
 import "../styles/variables.css";
 import "../styles/editorial.css";
+import "../styles/coa.css";
 
 import profile from "../data/profile.js";
 import projects from "../data/projects.js";
@@ -13,12 +14,22 @@ import experience from "../data/experience.js";
 import education from "../data/education.js";
 import { initSiteChrome } from "../modules/siteNav.js";
 import { initAchievementsSection } from "../modules/achievementsManager.js";
+import { initCoaLab } from "../modules/coaLabEngine.js";
 import { initContactForm } from "../modules/contactForm.js";
 
-document.addEventListener("DOMContentLoaded", () => {
+function runWhenReady(fn) {
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", fn);
+  } else {
+    fn();
+  }
+}
+
+runWhenReady(() => {
   initSiteChrome("home");
   renderDynamicSections();
   initAchievementsSection();
+  initCoaLab();
   initContactForm();
 });
 

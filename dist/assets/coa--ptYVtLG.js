@@ -1,0 +1,1 @@
+import{i as t,p as i}from"./siteNav-e8-O1-lu.js";import{i as o}from"./coaLabEngine-Bou3to78.js";function a(e){document.readyState==="loading"?document.addEventListener("DOMContentLoaded",e):e()}a(()=>{t("coa"),document.title=`COA Lab — Interactive Computer Architecture | ${i.name}`,o()});
